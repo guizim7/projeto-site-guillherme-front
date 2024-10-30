@@ -1,0 +1,96 @@
+
+.carrossel-botaoprodutos {
+	display: flex;
+	justify-content: center;  
+    gap: 1500px;
+	top: 50%; transform: translateY(-50%);
+	padding-bottom: 300px;
+}
+
+.carrossel-produtos {
+ 	text-align: center;  
+ 	padding-right: 40px;
+
+}
+
+.carrossel-produtos li {
+    display: inline-block;
+	padding: 20px;
+}
+
+.carrossel-produtos p {
+	color: #222222;
+}
+
+.imagem2 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.carrossel-botoes-proxima {
+    display: flex;
+	justify-content: center; 
+    gap: 1350px;
+
+}
+
+.carrossel-botoes-proxima .carrossel-botao-volta {
+    width: 35px;
+	height: 35px;
+    cursor: pointer;
+}
+
+.carrossel-botoes-proxima .carrossel-botao-vai {
+    width: 35px;
+	height: 35px;
+    cursor: pointer;
+}
+
+
+.carrossel-carrossel {
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+}
+
+.carrossel-conteudo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 100vh;
+}
+
+.carrossel-botoes-carrossel {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+    padding-top: 175px;
+}
+
+.carrossel-botoes-carrossel .carrossel-botao {
+	background-color: #F2F2F2;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+
+.carrossel-botoes-carrossel .carrossel-botao.selecionado {
+	background-color: #10757A;
+    width: 17px;
+	height: 17px;
+}
+
+.imagem {
+	width: 100vw;	
+	object-fit: cover;
+	display: none;
+}
+
+.imagem.ativa {
+	display: block;
+	animation: mudarImagem 0.7s;
+}
